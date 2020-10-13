@@ -9,18 +9,19 @@ d = int(input('Digite à sua Nota do Quarto Bimestre:'))
 media = (a + b + c + d) /4
 if a <= 10 and b <= 10 and c <= 10 and d <= 10:
     #.format é usado para formatar a resposta
-     print('Sua media é: {}'.format(media))
-     print('Obrigado por usar a calculadora de media.')
+    print('Sua media é: {}'.format(media))
+    print('Obrigado por usar a calculadora de media.')
+
+    if media > 7:
+        print('Congratulations! Parabéns você foi aprovado!')
+    else:
+        print('Infelizmente você não foi aprovado')
+        print('Estude mais e tente de novo no próximo período letivo!')
+        print('Mas um ano chega ao fim, desejamos à todos, um ótimo fim de a novo & boas festas!')
+        print('Este é o Fim do programa.')
+
 else:
      print('Desculpe foi informado alguma nota errada,')
      print('digite apenas nota de 0 à 10.')
      print('Reinicie o programa e tente de novo.')
      print('Obrigado por usar a calculadora de media.')
-
-if media > 7:
-    print('Congratulations! Parabéns você foi aprovado!')
-else:
-    print('Infelizmente você não foi aprovado')
-    print('Estude mais e tente de novo no próximo período letivo!')
-print('Mas um ano chega ao fim, desejamos à todos, um ótimo fim de a novo & boas festas!')
-print('Este é o Fim do programa.')
